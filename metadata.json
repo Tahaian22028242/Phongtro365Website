@@ -1,0 +1,6 @@
+{
+  "name": "Phongtro365 - Nền tảng tìm kiếm và cho thuê phòng trọ",
+  "description": "Nền tảng tìm kiếm và cho thuê phòng trọ hiện đại, tích hợp AI Recommendation System gợi ý phòng trọ thông minh theo nhu cầu, bản đồ trực quan và quản lý tin đăng.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

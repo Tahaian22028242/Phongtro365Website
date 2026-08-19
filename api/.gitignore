@@ -1,0 +1,8 @@
+node_modules
+uploads
+dist
+dist-ssr
+*.local
+prisma/migrations
+
+.env
