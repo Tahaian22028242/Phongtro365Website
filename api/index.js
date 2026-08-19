@@ -70,6 +70,10 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`[Phongtro365] Server is running on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+    app.listen(PORT, '0.0.0.0', () => {
+        console.log(`[Phongtro365] Server is running on port ${PORT}`);
+    });
+}
+
+module.exports = app;

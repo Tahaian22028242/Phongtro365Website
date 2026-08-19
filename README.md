@@ -131,6 +131,24 @@ npm start
 
 ---
 
+## Deploy to Vercel
+
+Dự án đã được tích hợp sẵn file cấu hình `vercel.json` hỗ trợ Full-stack Serverless:
+
+1. **Đẩy mã nguồn lên GitHub** (hoặc GitLab / Bitbucket).
+2. **Truy cập [Vercel](https://vercel.com)**, chọn **"Add New..."** -> **"Project"** và import repository của bạn.
+3. **Cài đặt cấu hình Build & Output:**
+   - **Framework Preset:** `Vite` (hoặc `Other`)
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `client/dist`
+4. **Cài đặt Environment Variables (Biến môi trường) trên Vercel:**
+   - `GEMINI_API_KEY`: API Key của Gemini AI (nếu dùng tính năng AI Gợi ý phòng)
+   - `JWT_SECRET`: Chuỗi bí mật bất kỳ để mã hóa token
+   - `DATABASE_URL`: (Tùy chọn) Chuỗi kết nối MySQL / PostgreSQL (Nếu không cấu hình, app sẽ chạy ở chế độ In-Memory an toàn).
+5. Nhấn **"Deploy"** và nhận liên kết website hoạt động ngay lập tức!
+
+---
+
 ## Database Schema
 
 The system uses **MySQL** with **Prisma ORM**, including the following main models:
